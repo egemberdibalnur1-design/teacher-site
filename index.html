@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <title>Мұғалімнің жеке сайты</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f4f6fb;
+            color: #222;
+        }
+        header {
+            background: #3f51b5;
+            color: #fff;
+            padding: 20px 10%;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        header h1 { font-size: 24px; margin-bottom: 5px; }
+        header p { font-size: 14px; opacity: 0.9; }
+
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            margin-right: 15px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px 10%;
+        }
+        section {
+            background: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+        h2 {
+            margin-bottom: 10px;
+            color: #3f51b5;
+        }
+        h3 { margin-top: 10px; margin-bottom: 5px; }
+
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .card {
+            border-radius: 10px;
+            padding: 15px;
+            background: #f9fafb;
+            border: 1px solid #e0e0e0;
+        }
+
+        ul { margin-left: 20px; margin-top: 5px; }
+        li { margin-bottom: 5px; }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 14px;
+            background: #3f51b5;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+        .btn:hover {
+            background: #303f9f;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 12px;
+            color: #777;
+        }
+
+        .small-text { font-size: 13px; color: #555; }
+
+        @media (max-width: 768px) {
+            main { padding: 15px; }
+            header { padding: 15px; }
+            .two-columns {
+                grid-template-columns: 1fr;
+            }
+            nav a {
+                display: inline-block;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Информатика мұғалімінің веб-сайты</h1>
+    <p>Оқушылардың танымдық белсенділігін арттыруға арналған онлайн алаң</p>
+    <nav>
+        <a href="#about">Сабақ туралы</a>
+        <a href="#lesson">Практикалық сабақ</a>
+        <a href="#materials">Материалдар</a>
+        <a href="#quiz">Онлайн викторина</a>
+        <a href="#feedback">Кері байланыс</a>
+    </nav>
+</header>
+
+<main>
+    <!-- Сабақ туралы бөлім -->
+    <section id="about">
+        <h2>Сабақтың жалпы сипаттамасы</h2>
+        <p class="small-text">
+            Тақырыбы: Мұғалімнің веб-сайты арқылы оқушылардың танымдық белсенділігін арттыру.
+        </p>
+        <div class="two-columns">
+            <div class="card">
+                <h3>Сабақтың мақсаты</h3>
+                <ul>
+                    <li>Веб-сайттың оқу үрдісіндегі рөлін түсіну;</li>
+                    <li>Интерактивті онлайн тапсырмалармен жұмыс жасау;</li>
+                    <li>Өз бетінше іздену дағдыларын дамыту;</li>
+                    <li>Цифрлық ортада оқуға қызығушылықты арттыру.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Мақсатты аудитория</h3>
+                <ul>
+                    <li>7–8 сынып оқушылары;</li>
+                    <li>Информатика / жаратылыстану бағыты;</li>
+                    <li>Базалық компьютерлік дағдысы бар оқушылар.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Практикалық сабақ барысы -->
+    <section id="lesson">
+        <h2>Практикалық сабақтың барысы</h2>
+
+        <h3>1. Кіріспе (5–7 мин)</h3>
+        <ul>
+            <li>Мұғалім сайттың басты бетін көрсетеді.</li>
+            <li>Сұрақ: «Сабақ тек кітаппен өткенді жақсы көресің бе, әлде онлайн сайтпен бе?»</li>
+            <li>Қысқа мотивациялық бейнежазба көрсетіледі (мысалы, «Қазіргі білімдегі цифрлық технологиялар»).</li>
+        </ul>
+        <p class="small-text">
+            Сайттың рөлі: оқушылардың назарын аудару, сабақ тақырыбымен таныстыру.
+        </p>
+
+        <h3>2. Негізгі бөлім (25–30 мин)</h3>
+        <div class="card">
+            <h4>2.1 Теориямен танысу</h4>
+            <ul>
+                <li>Оқушылар сайттағы мәтінді оқиды: «Мұғалім сайтының маңызы».</li>
+                <li>Инфографика немесе схема арқылы басты идея көрсетіледі.</li>
+            </ul>
+            <p class="small-text">Сайттың рөлі: материалды визуалды түрде ұсыну.</p>
+        </div>
+
+        <div class="card">
+            <h4>2.2 Интерактивті тапсырма</h4>
+            <ul>
+                <li>Сайтта «Сәйкестендіру» немесе «Дұрыс/Бұрыс» ойыны (LearningApps, Wordwall сілтемесі).</li>
+                <li>Оқушылар жұппен немесе жеке орындайды.</li>
+            </ul>
+            <p class="small-text">Сайттың рөлі: танымдық белсенділікті арттыру, ойын арқылы оқу.</p>
+        </div>
+
+        <div class="card">
+            <h4>2.3 Онлайн викторина</h4>
+            <ul>
+                <li>5–7 сұрақтан тұратын тест (Google Forms / Quizizz).</li>
+                <li>Әр оқушы өз құрылғысынан орындайды.</li>
+            </ul>
+            <p class="small-text">Сайттың рөлі: автоматты бағалау, жедел кері байланыс.</p>
+        </div>
+
+        <h3>3. Қорытынды (8–10 мин)</h3>
+        <ul>
+            <li>Оқушылар сайттағы «Рефлексия» бөліміне қысқа пікір жазады:
+                <br>«Мен бүгін білдім…», «Маған ең қызықты болғаны…»
+            </li>
+            <li>Мұғалім 2–3 оқушының пікірін дауыстап оқып, қорытынды жасайды.</li>
+        </ul>
+        <p class="small-text">Сайттың рөлі: кері байланыс жинау, ой түйіндеу.</p>
+    </section>
+
+    <!-- Материалдар бөлімі -->
+    <section id="materials">
+        <h2>Сабақ материалдары</h2>
+        <ul>
+            <li><b>Мәтіндік материал:</b> «Мұғалімнің веб-сайтының рөлі» (PDF/Word сілтемесі).</li>
+            <li><b>Бейнеролик:</b> Цифрлық білім беру туралы қысқа видео (YouTube сілтемесі).</li>
+            <li><b>Интерактивті тапсырма:</b> LearningApps / Wordwall платформасындағы ойын.</li>
+            <li><b>Презентация:</b> Сабақ слайдтары (PowerPoint / Google Slides).</li>
+        </ul>
+        <a href="#" class="btn">Материалдарды жүктеу (плейсхолдер)</a>
+    </section>
+
+    <!-- Викторина бөлімі -->
+    <section id="quiz">
+        <h2>Онлайн викторина</h2>
+        <p>
+            Бұл бөлімде оқушылар веб-сайт арқылы қысқа тест орындайды.
+            Нәтижесі автоматты түрде шығарылады.
+        </p>
+        <p class="small-text">
+            Мұнда өзіңнің Google Forms немесе Quizizz сілтемеңді қоясың:
+        </p>
+        <a href="#" class="btn">Викторинаны бастау</a>
+    </section>
+
+    <!-- Кері байланыс -->
+    <section id="feedback">
+        <h2>Кері байланыс / Рефлексия</h2>
+        <p>Төмендегі өріске оқушылар өз ойларын жаза алады (осы жерді кейін нағыз формаға ауыстыруға болады):</p>
+        <p><i>«Бүгін сабақта мен білдім…»</i></p>
+        <p><i>«Маған қиын болғаны…»</i></p>
+        <p><i>«Келесі сабақта мен … білгім келеді»</i></p>
+        <p class="small-text">
+            Егер нағыз форма қолданғың келсе, осы жерге Google Forms ендірілген кодын немесе пікір қалдыру виджетін қоса аласың.
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    © 2025 Мұғалімнің веб-сайты. Оқушылардың танымдық белсенділігін арттыруға арналған.
+</footer>
+
+</body>
+</html>
